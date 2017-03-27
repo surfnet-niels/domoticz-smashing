@@ -1,0 +1,23 @@
+<h1 class="title" data-bind="title"></h1>
+
+<ol>
+  <li data-foreach-item="items">
+	<span class="label" data-bind="item.idx"></span>
+    <span class="label" data-bind="item.label"></span>
+    <span class="value" data-bind="item.value"></span>
+  </li>
+</ol>
+
+<ul class="list-nostyle">
+  <li data-foreach-item="items">
+	<div onclick="location.href=this.id;" data-bind-id="item.url  | raw">
+      <span class="ONlabel" data-bind="item.label" data-showif="item.isON"></span>
+      <span class="OFFlabel" data-bind="item.label" data-hideif="item.isON"></span>
+      <span class="ONvalue" data-bind="item.value" data-showif="item.isON"></span>
+      <span class="OFFvalue" data-bind="item.value" data-hideif="item.isON"></span>
+    </div>
+  </li>
+</ul>
+
+<p class="more-info" data-bind="moreinfo"></p>
+<p class="updated-at" data-bind="updatedAtMessage"></p>
