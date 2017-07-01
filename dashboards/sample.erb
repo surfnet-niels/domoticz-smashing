@@ -1,7 +1,7 @@
 <% content_for :title do %>Domoticz dashboard v2<% end %>
 <div class="gridster">
   <ul>
-<!--
+  <!--
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="welcome" data-view="Text" data-title="Hello" data-text="This is your shiny new dashboard." data-moreinfo="Protip: You can drag the widgets around!"></div>
     </li>
@@ -18,19 +18,12 @@
       <div data-id="valuation" data-view="Number" data-title="Current Valuation" data-moreinfo="In billions" data-prefix="$"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div data-id="convergence" data-view="Graph" data-title="Convergence" style="background-color:#ff9618"></div>
-    </li>
-    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-	  <div data-view="DailyXKCD" data-id="xkcd-of-the-day"></div>
-	</li>
 	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="domoticz-lightswitches" data-view="List" data-unordered="true" data-title="Domoticz Data" data-moreinfo="Domoticz Switches"></div>
     </li>
 	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="domoticz-lightswitches" data-view="List" data-unordered="true" data-title="Light Switches" data-moreinfo="Domoticz Favorite Light Switches"></div>
     </li>
--->
 	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="domoticz-lightswitches2" data-view="URLList" data-unordered="true" data-title="URLList Data" data-moreinfo="Domoticz URLList Switches"></div>
     </li>
@@ -40,8 +33,12 @@
     <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
       <div data-id="domoticz-utility" data-view="Graph" data-title="domoticz-utility" style="background-color:#ff9618"></div>
     </li>
+-->
+	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+		<div data-id="forecast" data-view="Forecast" data-title="Weersverwachting" ></div>
+	</li>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-view="TwelveHourClock"></div>
+       <div data-id="extended_clock-sunrise_sunset" data-view="TwelveHourClock"></div>
     </li>
   </ul>
 </div>
