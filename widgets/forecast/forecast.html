@@ -1,0 +1,21 @@
+<h1 class="title" data-bind="title"></h1>
+
+<table border="0">
+<tr>
+	<td>Nu
+	</td>
+	<td>Morgen
+	</td>
+</tr>
+<tr>
+	<td><h2 class="temp" data-bind="current_temperature | raw"></h2>
+	</td>
+	<td><h2 class="temp" data-bind="tomorrow_temperature | raw"></h2>
+	</td>
+</tr>
+<tr>
+	<td colspan="2"><p class="summary" data-bind="hour_forecast | raw"></p></td>
+</tr>
+</table>
+<!-- <p class="more-info">Powered by Forecast.io</p> -->
+<p class="updated-at" data-bind="updatedAtMessage"></p>
