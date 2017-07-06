@@ -1,19 +1,6 @@
 class Dashing.TwelveHourClock extends Dashing.Widget
-
   ready: ->
     setInterval(@startTime, 1000)
-
-  startTime: =>
-    weekdays_nl = ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"]
-    today    = new Date()
-    #hours    = @getHours(today.getHours())
-    hours    = today.getHours()
-    minutes  = @formatTime(today.getMinutes())
-    meridiem = @getMeridiem(today.getHours())
-    #@set('weekday', weekdays_nl[3].toString())
-    @set('weekday', "Dus")
-    @set('time', hours + ":" + minutes)
-    @set('date', today.toLocaleDateString("nl-nl"))
 
   getHours: (i) ->
     ((i + 11) %% 12) + 1
@@ -23,3 +10,23 @@ class Dashing.TwelveHourClock extends Dashing.Widget
 
   formatTime: (i) ->
     if i < 10 then "0" + i else i
+
+  startTime: =>
+    weekdays_nl = ["Zondag", "Maandag", "Dinsdag", "Woensdag", "Donderdag", "Vrijdag", "Zaterdag"]   
+    months_nl = ["Januari", "Februari", "Maart", "April", "Mei", "Juni", "Juli", "Augustus", "September", "Oktober", "November", "December"]
+    today    = new Date()
+
+    #console.log("Weekday : " + weekdays_nl[today.getDay()])
+    #console.log(today.getDate() + " - " + months_nl[today.getMonth()] + " - " + today.getFullYear())
+
+    hours    = today.getHours()
+    minutes  = @formatTime(today.getMinutes())
+    meridiem = @getMeridiem(today.getHours())
+    
+    @set('weekday', weekdays_nl[today.getDay()])
+    @set('time', hours + ":" + minutes)
+    @set('date', today.getDate() + " " + months_nl[today.getMonth()] + " " + today.getFullYear())
+    #@set('sunrise', "\u21D1 ")
+    #@set('sunset', "\u21D3 ")
+
+
