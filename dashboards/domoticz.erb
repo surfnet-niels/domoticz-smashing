@@ -1,7 +1,20 @@
 <% content_for :title do %>Domoticz dashboard v2<% end %>
 <div class="gridster">
   <ul>
-	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+   <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+       <div data-id="domoticz-p1-gasusage" data-view ="BarChart" data-moreinfo=""></div>
+   </li>
+   <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+       <div data-id="domoticz-p1-gasusage" data-view ="LineChart" data-moreinfo=""></div>
+   </li>
+   <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+       <div data-id="domoticz-p1-powerusage" data-view ="BarChart" data-moreinfo=""></div>
+   </li>
+   <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
+       <div data-id="domoticz-p1-powerusage" data-view ="LineChart" data-moreinfo=""></div>
+   </li>
+<!--
+   <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="domoticz-lightswitches" data-view="URLList" data-unordered="true" data-title="URLList Data" data-moreinfo="Domoticz URLList Switches"></div>
     </li>
 	<li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -10,5 +23,6 @@
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
        <div data-id="extended_clock-sunrise_sunset" data-view="TwelveHourClock"></div>
     </li>
+-->
   </ul>
 </div>
