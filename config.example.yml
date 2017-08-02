@@ -1,0 +1,7 @@
+'debug_on': true
+'ns' :
+  'ns_api_username' : 'ns_api_username'
+  'ns_api_password' : 'ns_api_password'
+  'depart_from' : 'Driebergen-Zeist'
+  'destination' : 'Utrecht'
+
