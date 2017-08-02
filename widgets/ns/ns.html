@@ -1,0 +1,16 @@
+<h1 class="title" data-bind="title"></h1>
+<ul>
+  <li data-foreach-item="items">
+    <span class="destination" data-bind="item.destination"></span>
+    <span class="platform" data-bind="item.platform"></span>
+    <span class="departure" data-bind="item.departure"></span>
+    <span class="delay" data-bind-class="item.delayed" data-bind="item.delay"></span>
+  </li>
+</ul>
+
+<p class="disruptions">
+  <i data-bind-class="icon"></i>
+  <span data-bind="disruptions"></span>
+</p>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>

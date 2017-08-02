@@ -1,0 +1,104 @@
+// ----------------------------------------------------------------------------
+// Sass declarations
+// ----------------------------------------------------------------------------
+$background-color:  rgba(255, 211, 092, 1);
+$line-color:        rgba(240, 200, 080, 1);
+
+$text-color :       #000061;
+$title-color:       $text-color;
+$updated-color:     rgba($text-color, 0.3);
+$moreinfo-color:    $text-color;
+
+// ----------------------------------------------------------------------------
+// Widget-text styles
+// ----------------------------------------------------------------------------
+.widget-ns {
+
+  vertical-align: top !important;
+
+  background-color: $background-color;
+
+  .title {
+    color: $title-color;
+    font-size: 26px;
+  }
+
+  .disruptions {
+    color: $moreinfo-color;
+    position: relative;
+    top: 30px;
+    color: rgba($text-color, 0.8);
+    font-size: 16px;
+  }
+
+  .disruptions i {
+    font-weight: 100;
+    font-size: 14px;
+    vertical-align: 1px;
+  }
+
+  .updated-at {
+    color: $updated-color;
+  }
+
+  ul {
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+
+  ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid $line-color;
+    height: 30px;
+    margin-right: 20px;
+  }
+
+  ul li:last-child {
+    border-bottom: 0px;
+  }
+
+  ul li span {
+    display: block;
+    float: left;
+    color: $text-color;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  ul li span.destination {
+    width: 160px;
+    font-size: 20px;
+  }
+
+  ul li span.platform {
+    width: 40px;
+  }
+
+  ul li span.departure {
+    width: 50px;
+  }
+
+  ul li span.not-delayed {
+    display: none;
+  }
+
+  ul li span.delayed {
+    width: 30px;
+    color: red;
+    font-size: 14px;
+  }
+
+  ul li span.delayed:before {
+    content: '+';
+    font-size: 12px;
+    vertical-align: 1px;
+    margin-right: 1px;
+  }
+
+}
+
+.widget-ns.status-disruptions p.disruptions {
+  color: red;
+}
