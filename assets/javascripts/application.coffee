@@ -2,6 +2,9 @@
 # It includes jquery & batman for you.
 #= require dashing.js
 
+#= require moment.min.js
+#= require twix.min.js
+
 #= require_directory .
 #= require_tree ../../widgets
 
