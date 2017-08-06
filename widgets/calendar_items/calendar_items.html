@@ -1,0 +1,20 @@
+<h1 class="title" data-bind="title"></h1>
+
+<table border="1">
+    <tbody data-foreach-item="data">
+        <tr>
+			<td width="5%"></td>
+            <td width="40%" class="ccrange" data-bind="item.range" data-bind-start="item.start" data-bind-end="item.end"></td>
+            <td width="50%" data-bind="item.summary" class="title"></td>
+            <td width="5%"></td>
+        </tr>
+        <tr data-bind-class="item.show">
+            <td ></td>
+            <td colspan="1" data-bind="item.attendees" class="attendees"></td>
+            <td ></td>
+        </tr>
+    </tbody>
+</table>
+
+<p class="updated-at" data-bind="updatedAtMessage"></p>
+
