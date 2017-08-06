@@ -1,1 +1,0 @@
-../jobs-available/forecast.rb

@@ -1,1 +1,0 @@
-../jobs-available/domoticz_p1powerusage.rb

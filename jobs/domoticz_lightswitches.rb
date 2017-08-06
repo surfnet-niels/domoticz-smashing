@@ -1,1 +1,0 @@
-../jobs-available/domoticz_lightswitches.rb
